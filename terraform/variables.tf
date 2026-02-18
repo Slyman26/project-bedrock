@@ -14,3 +14,5 @@ variable "assets_bucket_name" {
   description = "Name of the S3 bucket for assets"
   default     = "bedrock-assets-0938-bk"
 }
+
+# CI/CD workflow test comment
