@@ -23,8 +23,8 @@ resource "aws_iam_policy" "dev_view_s3_put" {
     Version = "2012-10-17"
     Statement = [
       {
-        Effect   = "Allow"
-        Action   = ["s3:PutObject","s3:ListBucket"]
+        Effect = "Allow"
+        Action = ["s3:PutObject", "s3:ListBucket"]
         Resource = [
           aws_s3_bucket.assets.arn,
           "${aws_s3_bucket.assets.arn}/*"

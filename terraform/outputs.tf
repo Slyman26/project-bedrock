@@ -23,6 +23,6 @@ output "dev_access_key_id" {
 }
 
 output "dev_secret_access_key" {
-  value = aws_iam_access_key.dev_view_key.secret
+  value     = aws_iam_access_key.dev_view_key.secret
   sensitive = true
 }
